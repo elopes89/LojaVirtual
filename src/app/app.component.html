@@ -1,31 +1,29 @@
 <h1>Mostruário Rômulo</h1>
-<div *ngIf="relogios">
-  <div class="container my-5">
-    <div class="row d-flex">
-      <div
-        *ngFor="let item of relogios"
-        class="col-12 col-md-6 col-lg-4 col-xl-3"
-      >
-        <div class="card mb-3 col p-0">
-          <div class="card-body">
+<div class="container my-5">
+  <div class="row d-flex">
+    <div
+      *ngFor="let item of relogios"
+      class="col-12 col-md-6 col-lg-4 col-xl-3"
+    >
+      <div class="card mb-3 col p-0">
+        <div class="card-body">
           <img
-          [src]="item.urlImagem"
+            [src]="item.urlImagem"
             class="card-img-top"
             alt="imagem relógio"
           />
-            <h5 class="card-title">Modelo: {{ item.modelo }}</h5>
-            <p class="card-text">Marca: {{ item.marca }}</p>
-            <p class="card-text">Cor: {{ item.cor }}</p>
-            <p class="card-text">R$: {{ item.preco }}</p>
-            <button class="btn btn-success">
-              <a
-                aria-label="Chat on WhatsApp"
-                href="https://wa.me/+5548988745253"
-                target="blank"
-                >Iniciar Conversa</a
-              >
-            </button>
-          </div>
+          <h5 class="card-title">Modelo: {{ item.modelo }}</h5>
+          <p class="card-text">Marca: {{ item.marca }}</p>
+          <p class="card-text">Cor: {{ item.cor }}</p>
+          <p class="card-text">R$: {{ item.preco }}</p>
+          <button class="btn btn-success">
+            <a
+              aria-label="Chat on WhatsApp"
+              href="https://wa.me/+5548988745253"
+              target="blank"
+              >Iniciar Conversa</a
+            >
+          </button>
         </div>
       </div>
     </div>

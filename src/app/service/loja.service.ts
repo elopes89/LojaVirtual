@@ -7,11 +7,11 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class LojaService {
-relogios: Array<IRelogio> = []
+  relogios: Array<IRelogio> = []
   constructor(private http: HttpClient) { }
 
-getAll(): Observable<IRelogio[]>{
-  return this.http.get<IRelogio[]>('http://localhost:3000/relogio');
-}
+  getAll(): Observable<IRelogio[]> {
+    return this.http.get<IRelogio[]>('http://localhost:3000/relogio');
+  }
 
 }

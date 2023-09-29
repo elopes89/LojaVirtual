@@ -23,4 +23,6 @@ export class AppComponent implements OnInit {
       this.relogios = not;
     });
   }
+
+  image = "https://acdn.mitiendanube.com/stores/002/078/682/products/design-sem-nome-9211-5f2041521abb3ea28d16509102492182-640-0.webp"
 }

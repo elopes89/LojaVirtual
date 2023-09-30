@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { LojaService } from './service/loja.service';
-import { IRelogio } from 'Interface/IRelogio';
-import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -10,16 +8,12 @@ import { Observable } from 'rxjs';
 })
 export class AppComponent implements OnInit {
   title = 'sucessoTotal';
-  // relogios: Array<IRelogio> = [];
   constructor(private ls: LojaService) {
   }
 
-relogios = this.ls.relogio
+  relogios = this.ls.relogio
 
   ngOnInit(): void {
-    // this.ls.getAll().subscribe((not) => {
-      // this.relogios = not;
-    // });
   }
 
 }
